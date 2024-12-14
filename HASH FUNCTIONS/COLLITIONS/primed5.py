@@ -29,3 +29,10 @@ print(sign)
 send = dumps({"option" : "check", "prime" : non_prime, "signature" : sign, "a" : a}).encode()
 r.sendline(send)
 r.interactive()
+
+#Solution
+#The code imports various cryptographic and mathematical libraries and defines two arrays, input1 and input2, containing 16 elements each. 
+# The elements of input2 are derived by XORing corresponding values of input1 with a mask, and then both input1 and input2 are converted to bytes. 
+# The code then ensures that the MD5 hash of input1 matches the hash of input2. 
+# It computes a prime number based on the value of input1 and calculates a suffix that, when appended to input1, ensures the value of input2 is not prime. 
+# Finally, the script interacts with a remote server, signing a prime number and checking the validity of the signature for a non-prime number, then enters interactive mode with the server.
