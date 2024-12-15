@@ -18,3 +18,9 @@ iv = bytes.fromhex(iv)
 cipher = AES.new(key,AES.MODE_CBC,iv)
 flag = cipher.decrypt(ct)
 print(flag)
+
+#Solution
+#This code simulates a secure communication process using a shared secret derived from a Diffie-Hellman-like key exchange.
+#It first generates a shared secret by applying modular exponentiation to the given values. 
+#The shared secret is then used to generate a 16-byte key through a SHA-1 hash, which is employed for AES decryption.
+#Finally, the encrypted message, or flag, is decrypted using AES in CBC mode, revealing the original plaintext.
