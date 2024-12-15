@@ -41,3 +41,8 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
         return plaintext.decode('ascii')
 
 print(decrypt_flag(shared_secret,iv_hex, enc_flag_hex))
+
+#Solution
+#This script is designed to exploit a vulnerability in an AES encryption scheme that uses Diffie-Hellman key exchange to generate a shared secret for encrypting a flag. The script interacts with a remote service that involves Alice and Bob exchanging Diffie-Hellman parameters and public keys. 
+#It first manipulates the Diffie-Hellman exchange by sending a crafted message to Bob, then it retrieves the shared secret B that can be used to decrypt the flag. 
+#The decrypt_flag function uses the shared secret, the IV (initialization vector), and the encrypted flag to compute the AES key, decrypt the message, and return the decrypted flag.
