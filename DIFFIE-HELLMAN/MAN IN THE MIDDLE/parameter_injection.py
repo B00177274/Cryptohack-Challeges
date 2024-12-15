@@ -87,3 +87,10 @@ def exploit():
         pr.close()
 
 exploit()
+
+
+#Solution
+#This Python script exploits a vulnerability in a Diffie-Hellman key exchange process, as described in the referenced CryptoPals challenge.
+#It intercepts the communication between Alice and Bob, manipulating parameters such as p, g, and A to inject custom values and create a shared secret (k). 
+#The script then computes the AES key using a SHA-1 hash of the secret and decrypts the flag using AES in CBC mode. 
+#The flag is printed as the final output after the decryption process.
