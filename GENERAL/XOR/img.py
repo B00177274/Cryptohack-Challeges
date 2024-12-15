@@ -14,3 +14,10 @@ def get_flag(input_data):
 input_data = None
 
 get_flag(input_data)
+
+
+#Solution
+#The code reads two images (flag.png and lemur.png) using the imageio.imread() function, and converts them into NumPy arrays of type np.int64. 
+# It then performs a bitwise XOR operation between the two image arrays (flag ^ lemur) and displays the resulting image using matplotlib.pyplot.imshow(). 
+# The resulting XORed image is shown in a plot window, and the function get_flag() does not return any value. 
+# This could be part of an image-based cryptographic challenge where the XOR operation reveals a hidden flag when applied to two images.

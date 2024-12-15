@@ -23,3 +23,9 @@ e3 = 715
 x = 2 * e1 + 3 * e2 + 5 * e3
 
 print("FLAG =", x % N)
+
+
+
+#Solution
+#The code solves a system of congruences using the Chinese Remainder Theorem. 
+# It calculates the partial results using the given moduli and their respective modular inverses, and combines them to find the value of x. Finally, it prints the result x % N as the FLAG.

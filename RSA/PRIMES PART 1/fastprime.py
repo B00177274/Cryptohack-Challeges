@@ -17,3 +17,9 @@ hexc = 0x249d72cd1d287b1a15a3881f2bff5788bc4bf62c789f2df44d88aae805b54c9a94b8944
 c = long_to_bytes(hexc)
 m = cipher.decrypt(c)
 print(m)
+
+#Solution
+#The code provided demonstrates RSA decryption using the PKCS1_OAEP scheme. 
+# It first constructs an RSA key from the modulus n, public exponent e, and the private exponent d, which is derived from the prime factors p and q.
+#  The ciphertext, represented as a hexadecimal value, is converted to bytes and then decrypted using the RSA key. 
+# Finally, the decrypted message is printed as plaintext.

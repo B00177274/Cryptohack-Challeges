@@ -19,3 +19,8 @@ for key in friend_keys[::-1]:
     d = number.inverse(key[1], phi)
     c = pow(c, d, N)
 print(number.long_to_bytes(c))
+
+#Solution
+#The provided script performs RSA decryption by iteratively applying the private keys of friends, in reverse order. 
+# It calculates the modular inverse of each friend's private exponent d using Euler's totient function φ(N) derived from the factorization of N. 
+# Finally, the script decrypts the ciphertext c using these private keys, ultimately printing the decrypted message in byte form.

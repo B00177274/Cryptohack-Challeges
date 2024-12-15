@@ -9,3 +9,10 @@ phi = (p-1)*(q-1)
 d = pow(e,-1,phi)
 m = pow(c,d,n)
 print(long_to_bytes(m))
+
+
+#Solution
+#The provided code performs RSA decryption by using the private key, which is derived from the prime numbers p and q
+#It first computes Euler's totient function, phi, by multiplying (p-1) and (q-1)
+#The private exponent d is then calculated as the modular inverse of the public exponent e modulo phi
+

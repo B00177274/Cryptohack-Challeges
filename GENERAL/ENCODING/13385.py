@@ -72,3 +72,16 @@ class Challenge():
 
 import builtins; builtins.Challenge = Challenge # hack to enable challenge to be run locally, see https://cryptohack.org/faq/#listener
 listener.start_server(port=13385)
+
+
+#Solution
+
+#Purpose: The script defines a cryptographic challenge where the user must provide a valid prime number (p) and a base (a) that satisfies specific criteria, including size constraints and coprimality, to pass the test and unlock a partial flag.
+
+#Prime Generation and Validation: It includes a sieve-based method (generate_basis) to generate small prime bases and uses the Miller-Rabin test (miller_rabin) for probabilistic primality testing.
+
+#Challenge Logic: The core function lizzies_little_window validates the inputs, performs modular exponentiation, and returns an error message or a partial flag based on the results.
+
+#Server Implementation: The Challenge class serves as an interface for handling user inputs, parsing them, and calling the challenge logic, which is hosted using a listener server on port 13385.
+
+#Constraints and Errors: The script enforces strict input conditions, such as requiring the prime number to be within a specific bit length and ensuring the base is smaller than the prime and coprime to it, returning clear error messages for invalid inputs

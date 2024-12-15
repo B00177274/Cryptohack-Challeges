@@ -21,3 +21,10 @@ m = pow(c, d, n)
 flag = long_to_bytes(m).decode()
  
 print(flag)
+
+
+
+#Solution
+#The code is used to decrypt a ciphertext c using RSA by first factoring the modulus n into two primes, p and q
+#It iterates through a list of Mersenne primes to find a divisor of n, then calculates the private key exponent d using Euler's totient function.
+#Finally, the message is decrypted by computing 

@@ -15,3 +15,11 @@ while r2 > 0:
     t1, t2 = t2, t1 - q * t2
 
 print(f"GCD:{r1}, u:{t1}, v:{s1}")
+
+
+#Solution
+#This code implements the Extended Euclidean Algorithm to compute the greatest common divisor (GCD) of two numbers (a and b) and also finds the coefficients (u and v).
+
+#It uses iterative updates to track the remainders (r1, r2), quotients, and coefficients (s1, s2, t1, t2) until the remainder becomes zero, indicating that the GCD has been found.
+
+#When executed, the script outputs the GCD and the values of u and v, which can be useful in modular arithmetic and cryptographic computations.

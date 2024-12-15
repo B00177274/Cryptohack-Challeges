@@ -58,3 +58,7 @@ bruteforce()
 
 
 # Solution:crypto{p3n6u1n5_h473_3cb}
+#The provided script attempts to brute-force the flag of a website protected by an AES encryption oracle. 
+# It does this by exploiting the ECB (Electronic Codebook) mode, where identical plaintext blocks result in identical ciphertext blocks. 
+# The script sends requests to the encryption service, incrementally guessing each character of the flag by comparing the ciphertext block pattern. 
+# It stops when the flag matches the expected format, resulting in the final flag, crypto{p3n6u1n5_h473_3cb}.

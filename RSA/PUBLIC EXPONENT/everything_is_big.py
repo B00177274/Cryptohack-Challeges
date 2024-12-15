@@ -38,3 +38,10 @@ c = int('0x3f984ff5244f1836ed69361f29905ca1ae6b3dcf249133c398d7762f5e27791917469
 d = owiener.attack(e,N)
 m = pow(c,d,N)
 print(long_to_bytes(m))
+
+
+#Solution
+#This Python script demonstrates the process of breaking RSA encryption using Wiener’s attack on a small private key.
+#  The script generates large prime numbers to form an RSA public key, encrypts a flag, and provides the ciphertext. 
+# It then uses the owiener library to apply Wiener’s attack to recover the private key and decrypt the message. 
+# If successful, the flag is revealed by converting the decrypted integer back into its original byte format

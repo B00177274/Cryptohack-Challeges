@@ -51,3 +51,10 @@ def matrix2bytes(matrix):
 inv_mix_columns(state)
 inv_shift_rows(state)
 matrix2bytes(state)
+
+
+#Solution
+#The code provided performs the inverse operations of the AES algorithm. 
+# First, inv_shift_rows reverses the shifting of rows in the state matrix that occurred during encryption. 
+# Next, inv_mix_columns reverses the column mixing transformation, which is crucial for decryption.
+#  The final result is printed as characters through the matrix2bytes function, allowing visualization of the state matrix after the inverse transformations.

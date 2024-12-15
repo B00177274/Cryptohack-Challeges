@@ -11,3 +11,9 @@ d = pow(5, e1 * e2, n) * q1 - pow(2, e1 * e2, n) * q2
 q = gcd(d, n)
 p = n // q
 print("crypto{%d,%d}" % (p,q))
+
+
+#Solution
+#The provided code implements a method for recovering two prime factors, p and q, from the RSA ciphertexts and public keys using the Chinese Remainder Theorem (CRT) and modular arithmetic. 
+# The ciphertexts c1 and c2, along with the exponents e1 and e2, are used in conjunction with the modulus n to compute values q1 and q2 by exponentiating the ciphertexts using the respective exponents.
+#  The value d is then calculated as a combination of these results, and the greatest common divisor (GCD) is used to derive the factorization of n into its prime factors p and q. Finally, it prints the flag in the format crypto{p, q}.

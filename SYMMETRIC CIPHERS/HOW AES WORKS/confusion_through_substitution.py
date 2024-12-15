@@ -60,3 +60,7 @@ def sub_bytes(s, sbox=s_box):
 
 
 sub_bytes(state, sbox=inv_s_box)
+#Solution
+#The sub_bytes function takes a 4x4 matrix of bytes and substitutes each byte using a provided substitution box. 
+# The matrix is iterated through, and for each byte, the corresponding value from the substitution box (either s_box or inv_s_box) is used to replace the byte. After the substitution, the matrix2bytes function is called to print the resulting matrix as characters. 
+# This process is commonly used in cryptographic algorithms like AES for the substitution step in encryption and decryption.

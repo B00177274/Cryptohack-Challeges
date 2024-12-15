@@ -21,3 +21,10 @@ for i in range(1,3):
     iv = cipher
 
 print(long_to_bytes(int(flag, 16)))
+
+
+#Solution
+#The code sends a request to an AES encryption service to retrieve an encrypted flag.
+#  It extracts the Initialization Vector (IV) and decrypts the ciphertext in blocks, using the previous block's ciphertext as the new IV. 
+# The decrypted data is XORed with the IV to recover the original plaintext flag. 
+# Finally, the flag is printed by converting the result from hexadecimal to bytes.

@@ -38,3 +38,10 @@ e = 3
 d = inverse(e, phi)
 ct = 39207274348578481322317340648475596807303160111338236677373 # from output.txt
 print(long_to_bytes(pow(ct, d, n)))
+
+
+#Solution
+#This code demonstrates how RSA encryption and decryption works with a small public exponent (e=3) and a given ciphertext. 
+# It generates two large prime numbers, calculates the modulus n and Euler's totient phi, and computes the private exponent d using the modular inverse of e. 
+# The plaintext flag is encrypted using the formula ct = pt^e mod n, and then decrypted using the private key to recover the original message.
+#  The second part of the code decrypts a given ciphertext using the precomputed p and q values, along with the private key d, to output the decrypted plaintext.

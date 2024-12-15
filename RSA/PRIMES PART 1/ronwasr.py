@@ -10,3 +10,10 @@ d = pow(e, -1, (p-1)*(q-1))
 key = RSA.construct((n, e, d))
 cipher = PKCS1_OAEP.new(key)
 print(cipher.decrypt(bytes.fromhex(hex(c)[2:])).decode())
+
+
+#Solution
+#The script demonstrates RSA decryption using the private key derived from the modulus n and the private exponent d. 
+# First, it imports the RSA key from the file 21.pem and retrieves the public exponent e and modulus n.
+#  It then uses the provided prime factors p and q to compute d, which is the modular inverse of e modulo the totient of n ((p-1)*(q-1)). 
+# Finally, it decrypts the ciphertext c using the PKCS1_OAEP cipher and prints the resulting plaintext message.

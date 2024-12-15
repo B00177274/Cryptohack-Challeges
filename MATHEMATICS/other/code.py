@@ -102,3 +102,10 @@ impl Reg {
  self.value = value;
  }
 }
+
+
+#Solution
+#The Rust code is designed to decrypt an encrypted PNG file (flag.enc.png) using a linear feedback shift register (LFSR) method. 
+# It initializes two registers (r1, r2) with specified bit-lengths and masks, then tries all possible combinations of values for the registers to decrypt the file.
+#  The decryption process compares the decrypted bytes with the PNG magic header (0x89, 0x50, 0x4E, 0x47) to verify correct decryption. 
+# Once the correct values for the registers are found, it proceeds to decrypt the rest of the PNG file's content. Finally, the decrypted PNG data is saved to a new file named lfsr.png, allowing the user to retrieve the original image after decryption.

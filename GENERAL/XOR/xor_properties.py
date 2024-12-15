@@ -19,3 +19,15 @@ key123 = xor(bkey21, key3)
 flag = xor(bfk123, key123)
 
 print(flag.decode('utf-8'))
+
+
+
+
+
+#Solution
+#The code performs a series of XOR operations to decrypt the flag. First, it takes four hexadecimal strings (hkey1, hkey21, hkey32, hflagkey123), converts them to bytes, and then uses the xor function from the pwn library to combine the keys step by step.
+
+#The XOR of bkey1 and bkey21 is stored in key2.
+#Then, key2 is XORed with bkey32 to create key3.
+#After that, bkey21 is XORed with key3 to create key123.
+#Finally, the flag key (bfk123) is XORed with key123 to retrieve the original flag, which is then printed in the form of a decoded string.

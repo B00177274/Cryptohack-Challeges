@@ -14,3 +14,7 @@ flag = xor(text, key)
 
 print(flag.decode('utf-8'))
 
+#Solution
+#The code takes a hexadecimal string (text), converts it into bytes, and then uses a pre-determined key (pkey = "myXORkey") to perform a bitwise XOR operation between the text and the key. 
+# The key is repeated as many times as needed to match the length of the text, ensuring that the XOR operation works correctly for each byte of the input. 
+# After XORing the text with the key, the resulting decoded string is printed, which should reveal the original message or "flag" hidden in the XORed text.

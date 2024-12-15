@@ -7,3 +7,9 @@ hash_object = hashlib.sha256(m.encode('utf-8')).hexdigest()
 hashm=btl(bytes.fromhex(hash_object))
 S=pow(hashm,d,N)
 print(S)
+
+#Solution
+#The code performs RSA digital signature generation for the message "crypto{Immut4ble_m3ssag1ng}". 
+# It first hashes the message using the SHA-256 algorithm and converts the hash to a number. 
+# Then, the code uses the RSA private key (d and N) to sign the hash by raising it to the power of d modulo N. 
+# Finally, it prints the resulting signature, which can be used to verify the authenticity of the message using the corresponding RSA public key.

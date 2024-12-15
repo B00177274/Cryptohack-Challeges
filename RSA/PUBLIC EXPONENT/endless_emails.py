@@ -61,3 +61,9 @@ for i,j,k in combinations(range(len(n)),3):
     flag=long_to_bytes(m[0])
     if b'crypto{' in flag:
         print(flag)
+
+        #Solution
+        # The provided code is designed to break a cryptographic challenge using the Chinese Remainder Theorem (CRT) and integer cube roots.
+        #  It attempts to solve a system of simultaneous congruences, where each ciphertext is encrypted using a public exponent e=3. 
+        # By combining three moduli at a time, the code extracts the cube root of the resulting value, which should yield the original plaintext message.
+        #  The code searches for a flag in the format crypto{...} and prints it when found.

@@ -32,3 +32,7 @@ print(bytes.fromhex(flag))
 
 #solution
 #crypto{50m3_p30pl3_d0n7_7h1nk_IV_15_1mp0r74n7_?}
+#This script demonstrates an attack on an AES encryption using ciphertext manipulation and analysis to retrieve the flag. 
+# It starts with a given ciphertext, then alters the ciphertext by changing part of it, effectively simulating a tampering attack. 
+# The script then extracts the initialization vector (IV) by XORing the manipulated ciphertext with the original ciphertext, revealing the IV. 
+# Finally, it outputs the flag after decryption, which is printed as crypto{50m3_p30pl3_d0n7_7h1nk_IV_15_1mp0r74n7_?}.

@@ -8,3 +8,8 @@ phi = p*(p-1)
 d = inverse(e,phi)
 m = pow(ct,d,n)
 print(long_to_bytes(m))
+
+#Solution
+#The script demonstrates RSA decryption by using a known prime factor of the modulus n to compute the totient φ(n).
+#  It calculates the private exponent d as the modular inverse of the public exponent e modulo φ(n).
+#  Finally, the ciphertext is decrypted using modular exponentiation, and the resulting message is converted into readable bytes.

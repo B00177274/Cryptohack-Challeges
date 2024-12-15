@@ -20,3 +20,9 @@ for a in ints:
     if pow(a, (p - 1) // 2, p) == 1 and a % p != 0:
         b = pow(a, (p + 1) // 4, p)
         print("FLAG =", max(-b, b))
+
+
+        #Solition
+        #The code attempts to find the square roots modulo a prime p for several integers a from the list ints.
+        #  It checks if a is a quadratic residue modulo p (i.e., if a^((p - 1) // 2) ≡ 1 mod p) and then computes the square root using the formula b = a^((p + 1) // 4) mod p. 
+        # If b is found, it prints the maximum of -b or b, which represents the square root modulo p. The result is labeled as the FLAG.

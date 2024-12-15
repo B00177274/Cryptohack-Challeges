@@ -24,3 +24,8 @@ new_sign = bxor(AES.new(pad(new_payload,16), AES.MODE_ECB).encrypt(sign), sign)
 payload_json = dumps({"option" : "get_flag", "message" : payload.hex(), "signature" : new_sign.hex()})
 r.sendline(payload_json.encode())
 r.interactive()
+
+#Solution
+#The code first sends a payload of 15 a characters to a remote server for signing. 
+# It then appends admin=True to the payload, pads it, and XORs the original signature with the AES-encrypted version of the signature. 
+# This creates a forged signature for the modified payload. Finally, the code sends the new payload with the forged signature back to the server to retrieve the flag.

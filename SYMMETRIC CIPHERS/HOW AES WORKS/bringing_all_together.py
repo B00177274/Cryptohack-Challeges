@@ -169,3 +169,10 @@ def decrypt(key, ciphertext):
     return matrix2bytes(ciphertext)
 
 print("".join([chr(k) for k in decrypt(key, ciphertext)]))
+
+
+#Solution
+#It looks like you're working on a detailed AES implementation, particularly the encryption and decryption flow with key expansion.
+#  The key expansion function is vital for generating the round keys from the master key, and the implementation utilizes various cryptographic concepts like the S-box, round constants, and the shift rows transformation.
+#  Additionally, operations like add_round_key, sub_bytes, and mix_columns form the core of the AES transformations for both encryption and decryption.
+#  If you'd like any further clarifications on specific parts of your implementation, feel free to ask!

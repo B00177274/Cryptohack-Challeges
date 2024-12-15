@@ -52,3 +52,8 @@ if ((adm == cconfig) and (len(iv3) % 32 == 0)):
     print(check_admin(cookie[32:], iv3))
 
 
+#Solution
+#This script interacts with a server that encrypts cookies in AES mode and contains a challenge where the user must flip the cookie's content to make the server return a flag. 
+# The script retrieves the initial cookie and splits it into the initialization vector (IV) and ciphertext.
+#  It then constructs a new IV by XORing the encrypted values of admin=False with admin=True;, which is the desired configuration. 
+# After creating the new IV, it sends the modified cookie back to the server to check if the "admin=True;" condition is met and retrieves the flag.

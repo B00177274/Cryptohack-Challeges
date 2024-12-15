@@ -14,3 +14,9 @@ d = inverse(e, phi)
 
 plaintext = pow(ciphertext, d, N)
 print(long_to_bytes(plaintext))
+
+#Solution
+#This script demonstrates RSA decryption using the private key derived from the prime factors of N.
+#  It first calculates the Euler's totient phi by subtracting 1 from each factor in the provided factor_set and multiplying the results. 
+# The modular inverse of e is then calculated to obtain the private exponent d.
+#  Finally, it decrypts the ciphertext using d and N, and converts the resulting plaintext back to bytes, printing the decrypted message.
