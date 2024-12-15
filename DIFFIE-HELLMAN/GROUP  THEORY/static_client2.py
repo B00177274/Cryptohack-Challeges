@@ -80,8 +80,15 @@ def decrypt_flag(shared_secret: int, iv: str, ciphertext: str):
     if is_pkcs7_padded(plaintext):
         return unpad(plaintext, 16).decode('ascii')
     else:
+
         return plaintext.decode('ascii')
 
 print(decrypt_flag(shared_secret, iv, ciphertext))
 
 r.interactive()
+
+#Solution
+#The script is designed to solve a cryptographic challenge involving Diffie-Hellman key exchange and AES encryption. 
+#First, it receives the Diffie-Hellman parameters (p, g, A, B) and uses the smooth_p function to find a smooth number greater than or equal to p.
+#It then calculates the shared secret using discrete logarithm and uses it to derive an AES key via SHA-1. 
+#Finally, the script decrypts the ciphertext using AES with the derived key, checking for PKCS7 padding before returning the decrypted plaintext (the flag).
