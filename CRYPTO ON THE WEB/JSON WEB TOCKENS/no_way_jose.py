@@ -25,3 +25,9 @@ print("Mock JWT", mock_jwt)
 # Send a request
 r = requests.get(get_auth_route(mock_jwt))
 print(r.content.decode("utf-8"))
+
+#Solution
+#The script demonstrates a vulnerability in JSON Web Tokens (JWT) where the algorithm is set to none, allowing tampering with the token. 
+#It decodes a JWT to inspect its header and payload, which initially contains the username "jose" and admin: false.
+#Then, the script crafts a modified JWT with the algorithm set to none, and changes the payload to set admin: true for a different username.
+#Finally, it sends the manipulated JWT to the authorization endpoint to gain access as an admin.
