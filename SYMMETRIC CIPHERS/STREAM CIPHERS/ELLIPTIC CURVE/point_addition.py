@@ -55,3 +55,11 @@ if __name__ == '__main__':
     S = ecc_points_add(S, R, a, p)
     print('S+R', S)
     print(S == (4215, 2162))
+
+
+
+    #Solution
+    #The script defines an elliptic curve point addition function for a specific curve equation. 
+    # It handles special cases like point at infinity and computes the slope using modular arithmetic. 
+    # The function ecc_points_add is used to add two points on the elliptic curve. 
+    # The script tests this function with different points and checks the results.

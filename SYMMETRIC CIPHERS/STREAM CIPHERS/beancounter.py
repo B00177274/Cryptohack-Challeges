@@ -21,3 +21,11 @@ for i in range(len(encrypted)):
 
 with open('bean_counter.png', 'wb') as fd:
     fd.write(bytes(png))
+
+
+
+    #Solution
+    #The code makes a GET request to retrieve encrypted data from a remote server.
+    #  It uses the PNG header and XORs it with the encrypted data to generate a keystream. 
+    # This keystream is then used to decrypt the entire encrypted data by applying XOR again. 
+    # Finally, the decrypted bytes are written to a PNG file named bean_counter.png.

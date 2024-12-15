@@ -14,3 +14,9 @@ matrix = [
 ]
 
 matrix2bytes(matrix)
+
+#Solution
+#The function matrix2bytes iterates over the 2D matrix and prints each value as its corresponding ASCII character.
+#  The matrix provided consists of integer values that represent ASCII codes. 
+# When these integers are printed, they correspond to the characters "c r y p t o { i n m a t r i x }". 
+# This shows how byte values can be mapped to readable text characters in Python

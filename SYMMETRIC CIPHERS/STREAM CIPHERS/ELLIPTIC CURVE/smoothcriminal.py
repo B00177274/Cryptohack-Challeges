@@ -114,3 +114,10 @@ shared_secret = gen_shared_secret(B, n)
 ciphertext = encrypt_flag(shared_secret)
 print(ciphertext)
 """
+
+
+#solution
+#This code implements elliptic curve cryptography (ECC) for secure communication. 
+# It defines key operations such as point addition, point inversion, and scalar multiplication on an elliptic curve. 
+# The gen_shared_secret function calculates the shared secret using a public key and private key combination. 
+# Finally, the encrypt_flag function derives an AES encryption key from the shared secret and encrypts the flag with CBC mode and a randomly generated IV.

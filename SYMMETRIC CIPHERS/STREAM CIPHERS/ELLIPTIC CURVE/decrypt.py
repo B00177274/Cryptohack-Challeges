@@ -72,3 +72,10 @@ if __name__ == '__main__':
         secret = scalar_mul(Q2, nB, a, p)
         flag = decrypt_flag(secret[0], iv, encrypted_flag)
         print(flag)
+
+
+        #Solution
+        #The code implements elliptic curve cryptography (ECC) to compute a shared secret. 
+        # It defines functions for elliptic curve point addition (ecc_points_add) and scalar multiplication (scalar_mul). 
+        # Using these functions, it calculates possible points on the curve and checks which one to use based on the modular condition. 
+        # Finally, the secret is used to decrypt an encrypted flag by calling the decrypt_flag function with the appropriate parameters.

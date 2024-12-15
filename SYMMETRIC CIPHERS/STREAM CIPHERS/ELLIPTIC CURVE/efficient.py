@@ -31,3 +31,10 @@ ciphertext = ?
 
 print(decrypt_flag(shared_secret, iv, ciphertext))
 """
+
+
+#Solution
+#The function decrypt_flag uses AES in CBC mode to decrypt a ciphertext by first deriving an AES key from a shared secret. 
+# The key is created using SHA-1, and the ciphertext and IV are converted from hexadecimal to bytes for decryption. 
+# After decryption, the padding is checked using PKCS7, and if valid, it is removed to reveal the plaintext. 
+# The decrypted message is then returned as a decoded ASCII string.

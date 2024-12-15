@@ -53,3 +53,10 @@ P = (2339, 2213)
 n = 7863
 S = scalar_mul(P, n, a, p)
 print(S)
+
+
+#Solution
+#The code defines elliptic curve operations, including point addition and scalar multiplication. 
+# The ecc_points_add function handles the addition of two elliptic curve points, considering various cases like the point at infinity and equal points. 
+# The scalar_mul function performs scalar multiplication, which involves repeated addition of a point to itself. 
+# The script tests these operations with different elliptic curve points and checks the results.

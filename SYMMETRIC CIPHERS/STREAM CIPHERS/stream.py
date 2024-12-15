@@ -115,3 +115,10 @@ guess_next("8d7f1bde8c7ced59c2a629fd760ee2e9fbf1fbd313f057cc41fe16f9ef7ff75c379f
 guess_next("8e7f08cfc93daf58daa67df62313e1e5f9faf7870bf5459558f118b7fa2bbf553cc387c05fe980ff72fe1ecebf3628e3", key, ' ')
 guess_next("933709c2cd71a117cfba2ee17618f9e9e5e4afcf12f743cc50f11bb7f530eb1d34d4808544accd8c75ed04caeb", key, ' ')
 test_key(encrypted_flag, key)
+
+
+#solution
+#This script is designed to decrypt a message encrypted with an AES stream cipher using a known key and a set of ciphertexts.
+#  The key is gradually discovered by XORing known parts of the plaintext (in this case, a partial flag) with the corresponding ciphertext, exploiting the properties of the XOR operation. 
+# The script uses a series of guesses for the characters in the flag and refines the key progressively by checking how each guess affects the ciphertext. 
+# The process continues until the entire flag is decrypted, using brute force combined with knowledge of known parts of the plaintext.

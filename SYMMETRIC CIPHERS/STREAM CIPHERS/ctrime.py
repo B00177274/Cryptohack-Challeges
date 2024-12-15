@@ -40,3 +40,10 @@ def bruteforce():
             break
 
 bruteforce()
+
+
+#Solution
+#The code is a brute-force solution to decrypt the flag from an AES-CTR encryption challenge. 
+# It starts with the known partial flag crypto{, then iterates over a custom alphabet to guess each subsequent character. 
+# The encrypt function is used to send the current flag as a hex-encoded string and retrieve the corresponding ciphertext. 
+# The brute-force process checks if the ciphertext length remains constant to determine if the correct character has been added, seventually revealing the full flag enclosed in }.

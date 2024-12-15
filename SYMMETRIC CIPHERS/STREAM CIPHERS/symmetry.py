@@ -20,3 +20,10 @@ cip = ef[32:]
 
 ret = encrypt(cip, iv)
 print(bytes.fromhex(ret))
+
+
+#solution
+#The script interacts with a web service to retrieve and manipulate AES-encrypted data. 
+# It first fetches an encrypted flag, which consists of a ciphertext and an initialization vector (IV).
+#  The script then attempts to re-encrypt the ciphertext using the same IV, leveraging the web service's encryption endpoint. 
+# The output of this process is printed in bytes, likely for further analysis or decryption attempts.

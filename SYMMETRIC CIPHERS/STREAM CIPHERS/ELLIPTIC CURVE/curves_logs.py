@@ -59,3 +59,9 @@ print(S)
 sha1 = hashlib.sha1()
 sha1.update(str(S[0]).encode())
 print(sha1.hexdigest())
+
+#Solution
+#The code implements elliptic curve cryptography (ECC) for computing a shared secret using scalar multiplication. 
+# It calculates the result of multiplying a point on the curve QA by a secret integer nB.
+#  The shared secret S is derived using elliptic curve addition and scalar multiplication formulas, and its x-coordinate is hashed using SHA-1. 
+# The output is the SHA-1 hash of the x-coordinate of the shared secret, which is often used in cryptographic protocols for key exchange or authentication.
