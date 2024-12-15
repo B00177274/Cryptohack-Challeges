@@ -79,3 +79,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Solution
+#This Python script solves a cryptographic challenge involving Diffie-Hellman key exchange and AES encryption. 
+#It intercepts Diffie-Hellman parameters and uses the discrete logarithm problem to compute the shared secret. 
+#The script then derives the AES key from the shared secret and decrypts the flag using AES in CBC mode, checking for PKCS7 padding. 
+#Finally, the decrypted flag is printed as the solution to the challenge.
